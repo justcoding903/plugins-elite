@@ -1,0 +1,58 @@
+.tooltip-left{
+    -webkit-clip-path: polygon(12% 49%, 22% 40%, 22% 0, 100% 0%, 100% 100%, 22% 100%, 22% 59%);
+    padding:30px;
+    width:502px;
+    text-align:center;
+    height:102px;
+    position: relative;
+    background:#dcb300;
+    border-radius:4px;
+}
+.tooltip-left:before{
+    content: '';
+    clip-path: polygon(12% 49%, 22% 40%, 22% 0, 100% 0%, 100% 100%, 22% 100%, 22% 59%);
+    padding:30px;
+    width:500px;
+    text-align:center;
+    height:100px;
+    color: #673500;
+    background:#fbf6d5;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius:4px;
+}
+.tooltip-right{
+    -webkit-clip-path: polygon(95% 50%, 83% 44%, 83% 0, 0 0, 0 100%, 84% 100%, 84% 56%);
+    padding:30px;
+    width:502px;
+    text-align:center;
+    height:102px;
+    position: relative;
+    background:#dcb300;
+    border-radius:4px;
+}
+.tooltip-right:before{
+    content: '';
+    clip-path: polygon(95% 50%, 83% 44%, 83% 0, 0 0, 0 100%, 84% 100%, 84% 56%);
+    padding:30px;
+    width:500px;
+    text-align:center;
+    height:100px;
+    color: #673500;
+    background:#fbf6d5;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius:4px;
+}
+.tooltip-text{
+    margin-left: 100px;
+    position:relative;
+    z-index:2000;
+    color: #673500;
+    font-size: 16px;
+    margin-top: 10px;
+}

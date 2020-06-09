@@ -1,0 +1,52 @@
+.wheel1{
+    margin-top: 56px;
+    width: 50px;
+    margin-left: 37px;
+    animation-name: spin;
+animation-duration: 500ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+.wheel2{
+    margin-top: 56px;
+    width: 50px;
+    margin-left: 104px;
+    animation-name: spin;
+animation-duration: 500ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+#preloader-flower{
+animation-name: spin;
+animation-duration: 2000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+#preloader-buzzsaw{
+animation-name: spin;
+animation-duration: 1000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+#grinderwheel{
+	    width: 150px;
+    margin-left: 357px;
+    animation-name: spin;
+animation-duration: 500ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+    margin-top: 20px;
+}
+#sparx{
+	    margin-left: 439px;
+    width: 270px;
+    margin-top: -510px;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

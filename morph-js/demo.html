@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo - Morph.js</title>
+	<link rel="stylesheet" type="text/css" href="css/morph.css">
+	<script type="text/javascript" src="js/morph.js"></script>
+	<style type="text/css">
+	.cleverbounce{
+		position: relative;
+		top: 0px;
+		animation: hoppety 2s infinite;
+	}
+	@keyframes hoppety{
+		0%{
+		transform: rotateZ(0deg);
+		top: 0px;
+		}
+		50%{
+		top: -130px;
+		transform: rotateZ(360deg);
+		}
+		100%{
+		transform: rotateZ(360deg);
+		top: 0px;
+		}
+	}
+	</style>
+</head>
+<body style="text-align: center; background-color: #29273C;">
+<h1 style="font-family: Roboto; font-weight: 1000; color: white;">Morph Preloader</h1>
+<br>
+<br>
+<br>
+
+<div id="morph-element" class="cleverbounce" style="background-position: -10px -10px;width: 200px; left: 700px; box-shadow: inset 0px 0px 20px 0px #3a3a3a;height: 200px;background-image: radial-gradient(magenta, #8500ff);"></div>
+<script type="text/javascript">
+//morphTo(id, morphTo)
+function roundabout3(){
+setTimeout("morphTo('morph-element', 'square')", 100);
+setTimeout("roundabout1()", 1000);
+}
+function roundabout2(){
+setTimeout("morphTo('morph-element', 'blob')", 100);
+setTimeout("roundabout3()", 1000);
+}
+function roundabout1(){
+setTimeout("morphTo('morph-element', 'circle')", 100);
+setTimeout("roundabout2()", 1000);
+}
+roundabout1()
+</script>
+</body>
+</html>
